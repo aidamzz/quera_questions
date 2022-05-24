@@ -10,14 +10,12 @@ def jam(n):
     if n == 1:
         return 1
     else:
-        for i in range(n,-1,-1):
-            if aval(i):
-                f = pow(i,2)+1
-                if i != n:
-                    for j in range(i+1,n+1):
-                        f = pow(j,2)+ math.gcd(j, f)
-                return f   
-                break
+        if aval(n):
+            f = pow(n,2)+1
+            return f
+        else:
+            f = pow(n,2)+ math.gcd(n, jam(n-1))
+            return f   
 
 
 n = int(input())

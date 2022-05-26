@@ -1,6 +1,5 @@
 n = int(input())
 
-
 def satr(n):
     ll= []
     if n == 3:

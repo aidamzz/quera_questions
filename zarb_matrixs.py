@@ -8,4 +8,10 @@ for i in range(m):
     l = map(int, input().split(' '))
     l2.append(list(l))
 
-for i in range(m):
+l3 = []
+for i in range(n):
+    l3.append([])
+
+for i in l3:
+    for i in range(k):
+        i.append(0)

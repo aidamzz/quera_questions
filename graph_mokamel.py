@@ -1,7 +1,7 @@
-n, m = map(int, input().split(' '))
+n, m = input().split(' ')
 l = {}
 
-for i in range(m):
+for i in range(int(m)):
     k, j = input().split(' ')
     if k in l.keys():
         l[k].append({k,j})
